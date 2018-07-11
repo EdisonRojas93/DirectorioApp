@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+// import { AnimationTransitionEvent } from '@angular/core/core';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -28,12 +30,14 @@ import { ContactService } from './services/contact.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule
+    // AnimationTransitionEvent
   ],
   providers: [
     ContactService
   ],
   bootstrap: [AppComponent],
- 
+
 })
 export class AppModule { }

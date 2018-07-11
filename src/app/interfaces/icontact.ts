@@ -1,4 +1,3 @@
-import { IAddress } from "./iaddress";
 import { ICompany } from "./icompany";
 
 export interface IContact {
@@ -8,6 +7,7 @@ export interface IContact {
   email?: string;
   phone?: string;
   website?: string;
-  address?: IAddress;
+  address?: string;
+  happybirthday?: string;
   company?: ICompany;
 }

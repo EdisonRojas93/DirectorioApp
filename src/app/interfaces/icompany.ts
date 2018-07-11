@@ -1,5 +1,4 @@
 export interface ICompany {
-  name:string,
-  catchPhrase: string,
-  bs:string
+  name: string;
+  address: string;
 }

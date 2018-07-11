@@ -1,12 +1,14 @@
 .content-card {
   position: relative;
   width: 100%;
-  border-radius: 5px;
   box-sizing: border-box;
-  padding: 10px 5px;
+  padding: 5px;
   display: flex;
   align-items: center;
-  border: 1px solid #455A64;
+  border-top: 1px  solid #455A64;
+  border-bottom: 1px  solid #455A64;
+  cursor: pointer;
+
   margin: 8px 0;
 }
 
@@ -17,6 +19,12 @@
   display: flex;
   justify-content: center;
   align-content: flex-end;
+  background-color:#2980B9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: white;
 }
 .info-contact{
   display: flex;

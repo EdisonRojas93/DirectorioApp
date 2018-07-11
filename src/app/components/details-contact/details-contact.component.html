@@ -1,5 +1,57 @@
+<div class="container" *ngIf="showInfo">
+  <div class="contact">
+    <div class="header">
+      <div class="options">
+        <div class="button save" title="Guardar" (click)="saveContact()">
+          <fa name="save"></fa>
+        </div>
+        <div class="button delete" title="Eliminar" (click)="deleteContact()">
+          <fa name="trash"></fa>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="assets/avatar.jpg" alt="">
+      </div>
+    </div>
+    <div class="form">
+      <div class="flex-column flex-aling-center">
+        <input type="text" placeholder="Nombre" class="text-center" name="name" [(ngModel)]="contact.name">
+        <input type="text" placeholder="Sobrenombre" class="text-center" name="username" [(ngModel)]="contact.username">
+      </div>
 
-<div *ngIf="contact">
-  hay datos
-  {{contact.name}}
+      <div class="flex-column flex-aling-center">
+        <div class="flex-column margin">
+          <label for="">Numero:</label>
+          <input type="text" placeholder="Numero" name="phone" [(ngModel)]="contact.phone">
+        </div>
+        <div class="flex-column margin">
+          <label for="">Correo:</label>
+          <input type="text" placeholder="Correo" name="email" [(ngModel)]="contact.email">
+        </div>
+        <div class="flex-column margin">
+          <label for="">Fecha Cumpleaños:</label>
+          <input type="text" placeholder="Fecha Cumpleaños" name="happybirthday" [(ngModel)]="contact.happybirthday">
+        </div>
+        <div class="flex-column margin">
+          <label for="">Dirección:</label>
+          <input type="text" placeholder="Dirección" name="address" [(ngModel)]="contact.address">
+        </div>
+        <div class="flex-column margin">
+          <label for="">Compañia:</label>
+          <input type="text" placeholder="Numero" name="companyName" [(ngModel)]="contact.company.name">
+        </div>
+        <div class="flex-column margin">
+          <label for="">Dirección Compañia:</label>
+          <input type="text" placeholder="Numero" name="companyName" [(ngModel)]="contact.company.address">
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="select-contact" *ngIf="!showInfo">
+  <p> Selecciona un contacto para ver detalle.....</p>
 </div>

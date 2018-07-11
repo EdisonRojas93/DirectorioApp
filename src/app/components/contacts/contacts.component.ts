@@ -15,7 +15,12 @@ export class ContactsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._contactService.getContacts().subscribe(resp => this.contacts = resp);
+    this._contactService.lstContact.subscribe(resp => this.contacts = resp);
+  }
+
+  addContact() {
+    this._contactService.setIdSeach(-1);
+    this._contactService.showAddContact();
   }
 
 }

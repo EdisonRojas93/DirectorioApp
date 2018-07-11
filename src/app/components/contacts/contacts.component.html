@@ -2,4 +2,7 @@
   <div *ngFor="let contact of contacts">
     <app-card-contact [contact]="contact"></app-card-contact>
   </div>
+  <div class="button-add" (click)="addContact()">
+    <fa name="plus"></fa>
+  </div>
 </div>
