@@ -1,0 +1,28 @@
+.content-card {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #455A64;
+  margin: 8px 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+.info-contact{
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  margin: 0 15px;
+
+}
+
