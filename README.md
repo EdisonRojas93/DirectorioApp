@@ -11,7 +11,7 @@ npm font-awesome
 
 Despues de descargar el programa el primer comando que debe ingresar es:
 ####Inline code
-    npm install
+npm install
 
 esto permite instalar todas las dependencias del proyecto para us previo funcionamiento.
 
